@@ -1,0 +1,22 @@
+<!-- index.html (Frontend) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebAssembly Example</title>
+</head>
+<body>
+  <h1>Data from WebAssembly Backend</h1>
+  <script>
+    // Fetch data from the backend API endpoint
+    fetch('/api/data')
+      .then(response => response.json())
+      .then(data => {
+        // Handle and display data in the DOM
+        console.log(data);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
+</html>
